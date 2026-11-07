@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="ko" class="no-js">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>JIUKAE — Ideas into Reality.</title>
+  <meta name="description" content="떠오른 아이디어를 코드로 만들고, 새로운 가능성을 실험하는 디지털 크리에이터 JIUKAE의 포트폴리오입니다.">
+  <meta name="author" content="JIUKAE">
+  <meta name="theme-color" content="#050816">
+  <meta name="color-scheme" content="dark">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="JIUKAE — Ideas into Reality.">
+  <meta property="og:description" content="떠오른 아이디어를 코드로 만들고, 새로운 가능성을 실험하는 디지털 크리에이터 JIUKAE의 포트폴리오입니다.">
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+
+  <!-- Web fonts (오프라인에서는 시스템 폰트로 자동 대체됩니다) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Noto+Sans+KR:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap">
+
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">본문으로 건너뛰기</a>
+
+  <!-- 아이콘용 공용 그라데이션 -->
+  <svg class="svg-defs" aria-hidden="true" focusable="false">
+    <defs>
+      <linearGradient id="icon-gradient" x1="3" y1="3" x2="21" y2="21" gradientUnits="userSpaceOnUse">
+        <stop offset="0" stop-color="#8fd3ff" />
+        <stop offset="0.5" stop-color="#7c8cff" />
+        <stop offset="1" stop-color="#c99dff" />
+      </linearGradient>
+    </defs>
+  </svg>
+
+  <!-- 배경: 우주/디지털 공간 -->
+  <div class="backdrop" aria-hidden="true">
+    <div class="backdrop__glow backdrop__glow--1"></div>
+    <div class="backdrop__glow backdrop__glow--2"></div>
+    <div class="backdrop__glow backdrop__glow--3"></div>
+    <div class="backdrop__stars"></div>
+    <div class="backdrop__stars backdrop__stars--twinkle"></div>
+    <div class="backdrop__noise"></div>
+  </div>
+
+  <!-- ===================== Header ===================== -->
+  <header class="header" data-header>
+    <div class="container header__inner">
+      <a class="logo" href="#home" aria-label="JIUKAE 홈으로 이동">JIUKAE<span class="logo__dot">.</span></a>
+
+      <nav class="nav" id="site-nav" aria-label="주요 메뉴" data-nav>
+        <ul class="nav__list">
+          <li class="nav__item"><a class="nav__link" href="#about"><span class="nav__num">01</span>About</a></li>
+          <li class="nav__item"><a class="nav__link" href="#projects"><span class="nav__num">02</span>Projects</a></li>
+          <li class="nav__item"><a class="nav__link" href="#skills"><span class="nav__num">03</span>Skills</a></li>
+          <li class="nav__item"><a class="nav__link" href="#philosophy"><span class="nav__num">04</span>Philosophy</a></li>
+          <li class="nav__item"><a class="nav__link" href="#contact"><span class="nav__num">05</span>Contact</a></li>
+        </ul>
+      </nav>
+
+      <button class="nav-toggle" type="button" aria-controls="site-nav" aria-expanded="false" aria-label="메뉴 열기" data-nav-toggle>
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+      </button>
+    </div>
+    <span class="header__progress" aria-hidden="true"></span>
+  </header>
+
+  <main id="main">
+    <!-- ===================== Hero ===================== -->
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="hero__floor" aria-hidden="true"></div>
+
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <p class="eyebrow" data-reveal>
+            <span class="pulse" aria-hidden="true"></span>
+            DIGITAL CREATOR / DEVELOPER
+          </p>
+
+          <h1 class="hero__title" id="hero-title" data-reveal="lines" data-delay="120">
+            <span class="line"><span class="line__inner">Ideas into</span></span>
+            <span class="line"><span class="line__inner text-gradient text-gradient--flow">Reality.</span></span>
+          </h1>
+
+          <div class="hero__intro" data-reveal data-delay="380">
+            <p class="hero__greeting">안녕하세요, JIUKAE입니다.</p>
+            <p class="hero__desc">떠오른 아이디어를 코드로 만들고,<br> 새로운 가능성을 실험하는 것을 좋아합니다.</p>
+          </div>
+
+          <div class="hero__actions" data-reveal data-delay="500">
+            <a class="btn btn--primary" href="#projects">
+              프로젝트 둘러보기
+              <svg class="icon btn__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
+            </a>
+            <a class="btn btn--ghost" href="#about">나에 대해 알아보기</a>
+          </div>
+        </div>
+
+        <!-- 3D 구체 (장식 요소) -->
+        <div class="hero__visual" aria-hidden="true">
+          <div class="hero__orb" data-reveal="scale" data-delay="200">
+            <div class="orb-glow"></div>
+            <div class="orb-stage" data-orb-stage>
+              <div class="orbit orbit--a"><span class="orbit__dot"></span></div>
+              <div class="orbit orbit--b"><span class="orbit__dot"></span></div>
+              <div class="orb">
+                <div class="orb__core"></div>
+                <div class="orb__grid">
+                  <span></span><span></span><span></span><span></span><span></span><span></span>
+                  <span></span><span></span><span></span><span></span><span></span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <span class="float-tag float-tag--1" data-reveal data-delay="700"><span class="float-tag__dot"></span>Creative Mind</span>
+          <span class="float-tag float-tag--2" data-reveal data-delay="820"><span class="float-tag__dot"></span>Code &amp; Build</span>
+          <span class="float-tag float-tag--3" data-reveal data-delay="940"><span class="float-tag__dot"></span>AI Explorer</span>
+          <span class="float-tag float-tag--4" data-reveal data-delay="1060"><span class="float-tag__dot"></span>Game Maker</span>
+        </div>
+      </div>
+
+      <a class="scroll-cue" href="#about" aria-label="아래로 스크롤하여 소개 보기">
+        <span class="scroll-cue__mouse" aria-hidden="true"></span>
+        <span aria-hidden="true">Scroll</span>
+      </a>
+    </section>
+
+    <!-- ===================== About ===================== -->
+    <section class="section about" id="about" aria-labelledby="about-title">
+      <div class="container about__grid">
+        <div class="about__content">
+          <p class="section-label" data-reveal><span class="section-label__num">01</span>About Me</p>
+          <h2 class="section-title" id="about-title" data-reveal>만드는 과정이<br> <span class="text-gradient">즐겁습니다.</span></h2>
+          <p class="about__lead" data-reveal>관심 있는 기술을 직접 만져 보고,<br class="br-wide"> 작동하는 결과물로 완성하는 메이커입니다.</p>
+          <p class="about__text" data-reveal>웹사이트와 메신저, 브라우저 게임을 만들고 AI 도구도 실험합니다. 처음부터 완벽한 답을 찾기보다, 직접 시도하고 문제를 해결하면서 배워 나가는 편입니다.</p>
+          <ol class="process" aria-label="작업 방식" data-reveal>
+            <li><span>Idea</span></li>
+            <li><span>Try</span></li>
+            <li><span>Solve</span></li>
+            <li><span>Learn</span></li>
+          </ol>
+        </div>
+
+        <ul class="keywords" aria-label="관심 키워드" data-reveal-group>
+          <li class="keywords__item" data-reveal>
+            <div class="keyword card card--interactive" data-spotlight>
+              <span class="keyword__num">01</span>
+              <span class="keyword__icon">
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="3" /><path d="M3 9h18M6.5 6.5h.01M9 6.5h.01" /><path d="m10 12.5-2 2 2 2M14 12.5l2 2-2 2" /></svg>
+              </span>
+              <strong class="keyword__name">WEB</strong>
+              <span class="keyword__desc">웹사이트 · 메신저</span>
+            </div>
+          </li>
+          <li class="keywords__item" data-reveal>
+            <div class="keyword card card--interactive" data-spotlight>
+              <span class="keyword__num">02</span>
+              <span class="keyword__icon">
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M11 3.5c.6 3.9 2.4 5.7 6.3 6.3-3.9.6-5.7 2.4-6.3 6.3-.6-3.9-2.4-5.7-6.3-6.3 3.9-.6 5.7-2.4 6.3-6.3Z" /><path d="M18.5 15.5v5M16 18h5" /></svg>
+              </span>
+              <strong class="keyword__name">AI</strong>
+              <span class="keyword__desc">생성형 AI · 도구 실험</span>
+            </div>
+          </li>
+          <li class="keywords__item" data-reveal>
+            <div class="keyword card card--interactive" data-spotlight>
+              <span class="keyword__num">03</span>
+              <span class="keyword__icon">
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7.5 7.5h9a4.5 4.5 0 0 1 4.5 4.5v1.2a3.3 3.3 0 0 1-6 1.9L14 13.6h-4l-1 1.5a3.3 3.3 0 0 1-6-1.9V12a4.5 4.5 0 0 1 4.5-4.5Z" /><path d="M7.5 9.8v3.4M5.8 11.5h3.4M15.5 10.6h.01M17.5 12.4h.01" /></svg>
+              </span>
+              <strong class="keyword__name">GAME</strong>
+              <span class="keyword__desc">브라우저 · Roblox 게임</span>
+            </div>
+          </li>
+          <li class="keywords__item" data-reveal>
+            <div class="keyword card card--interactive" data-spotlight>
+              <span class="keyword__num">04</span>
+              <span class="keyword__icon">
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3.5 8.5 4.5-8.5 4.5L3.5 8 12 3.5Z" /><path d="m3.5 12 8.5 4.5 8.5-4.5M3.5 16l8.5 4.5 8.5-4.5" /></svg>
+              </span>
+              <strong class="keyword__name">BUILD</strong>
+              <span class="keyword__desc">직접 시도하며 완성</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===================== Projects ===================== -->
+    <section class="section projects" id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <header class="section-head">
+          <p class="section-label" data-reveal><span class="section-label__num">02</span>Projects</p>
+          <h2 class="section-title" id="projects-title" data-reveal>아이디어를 <span class="text-gradient">직접 만든 기록</span></h2>
+          <p class="section-desc" data-reveal>화면 설계부터 기능 구현까지, 직접 만들고 실험해 온 프로젝트입니다.</p>
+        </header>
+
+        <!--
+          프로젝트 링크는 js/script.js 상단의 SITE_CONFIG.projectLinks 에서 입력합니다.
+          링크가 비어 있으면 '링크 준비 중'으로 표시됩니다.
+        -->
+        <ul class="projects__grid" data-reveal-group>
+          <li class="projects__item" data-reveal>
+            <article class="project project--blue card card--interactive" data-spotlight>
+              <div class="project__top">
+                <span class="project__icon">
+                  <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 11.5a8 8 0 0 1-11.7 7.1L4 20l1.4-4.4A8 8 0 1 1 20.5 11.5Z" /><path d="M8.5 11.5h.01M12.5 11.5h.01M16.5 11.5h.01" /></svg>
+                </span>
+                <span class="project__num">01</span>
+              </div>
+              <div class="project__body">
+                <p class="project__category">Messenger · Web App</p>
+                <h3 class="project__title">DoranTalk</h3>
+                <p class="project__desc">대화와 소통을 위한 나만의 메신저 프로젝트</p>
+                <p class="project__detail">서비스의 화면부터 기능까지 직접 개발</p>
+              </div>
+              <div class="project__footer">
+                <ul class="tags" aria-label="키워드">
+                  <li class="tag">Messenger</li>
+                  <li class="tag">UI</li>
+                  <li class="tag">Feature Dev</li>
+                </ul>
+                <a class="project__link" data-project-link="dorantalk">
+                  <span data-link-label>링크 준비 중</span>
+                  <span class="project__link-icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9" /></svg></span>
+                </a>
+              </div>
+            </article>
+          </li>
+
+          <li class="projects__item" data-reveal>
+            <article class="project project--cyan card card--interactive" data-spotlight>
+              <div class="project__top">
+                <span class="project__icon">
+                  <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3.5 18.5h6v-6h5v-5h3" /><circle cx="19.5" cy="7.5" r="2" /><circle cx="6.5" cy="7" r="1.1" /></svg>
+                </span>
+                <span class="project__num">02</span>
+              </div>
+              <div class="project__body">
+                <p class="project__category">Browser Game</p>
+                <h3 class="project__title">Snake Game</h3>
+                <p class="project__desc">HTML, CSS, JavaScript로 개발한 브라우저 게임</p>
+                <p class="project__detail">키보드 조작, 애니메이션, 랭킹 기능</p>
+              </div>
+              <div class="project__footer">
+                <ul class="tags" aria-label="사용 기술">
+                  <li class="tag">HTML</li>
+                  <li class="tag">CSS</li>
+                  <li class="tag">JavaScript</li>
+                </ul>
+                <a class="project__link" data-project-link="snake-game">
+                  <span data-link-label>링크 준비 중</span>
+                  <span class="project__link-icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9" /></svg></span>
+                </a>
+              </div>
+            </article>
+          </li>
+
+          <li class="projects__item" data-reveal>
+            <article class="project project--purple card card--interactive" data-spotlight>
+              <div class="project__top">
+                <span class="project__icon">
+                  <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="5" cy="6.5" r="2" /><circle cx="5" cy="17.5" r="2" /><circle cx="12" cy="12" r="2.3" /><circle cx="19" cy="6.5" r="2" /><circle cx="19" cy="17.5" r="2" /><path d="m6.7 7.6 3.4 2.9M6.7 16.4l3.4-2.9M13.9 10.5l3.4-2.9M13.9 13.5l3.4 2.9" /></svg>
+                </span>
+                <span class="project__num">03</span>
+              </div>
+              <div class="project__body">
+                <p class="project__category">AI · LLM</p>
+                <h3 class="project__title">AI Experiments</h3>
+                <p class="project__desc">생성형 AI와 챗봇 개발 실험</p>
+                <p class="project__detail">다양한 AI 도구 활용</p>
+              </div>
+              <div class="project__footer">
+                <ul class="tags" aria-label="키워드">
+                  <li class="tag">Generative AI</li>
+                  <li class="tag">Chatbot</li>
+                  <li class="tag">AI Tools</li>
+                </ul>
+                <a class="project__link" data-project-link="ai-experiments">
+                  <span data-link-label>링크 준비 중</span>
+                  <span class="project__link-icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9" /></svg></span>
+                </a>
+              </div>
+            </article>
+          </li>
+
+          <li class="projects__item" data-reveal>
+            <article class="project project--violet card card--interactive" data-spotlight>
+              <div class="project__top">
+                <span class="project__icon">
+                  <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m12 2.8 8 4.6v9.2l-8 4.6-8-4.6V7.4l8-4.6Z" /><path d="m4 7.4 8 4.6 8-4.6M12 12v9.2" /></svg>
+                </span>
+                <span class="project__num">04</span>
+              </div>
+              <div class="project__body">
+                <p class="project__category">Roblox · Games</p>
+                <h3 class="project__title">Game Development</h3>
+                <p class="project__desc">Roblox 및 다양한 게임 개발 프로젝트</p>
+                <p class="project__detail">게임 아이디어를 직접 구현하는 활동</p>
+              </div>
+              <div class="project__footer">
+                <ul class="tags" aria-label="키워드">
+                  <li class="tag">Roblox</li>
+                  <li class="tag">Lua</li>
+                  <li class="tag">Game Design</li>
+                </ul>
+                <a class="project__link" data-project-link="game-development">
+                  <span data-link-label>링크 준비 중</span>
+                  <span class="project__link-icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9" /></svg></span>
+                </a>
+              </div>
+            </article>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===================== Skills ===================== -->
+    <section class="section skills" id="skills" aria-labelledby="skills-title">
+      <div class="container skills__grid">
+        <div class="skills__intro">
+          <p class="section-label" data-reveal><span class="section-label__num">03</span>Skills</p>
+          <h2 class="section-title" id="skills-title" data-reveal>다루는 기술과<br> <span class="text-gradient">관심 분야</span></h2>
+          <p class="section-desc" data-reveal>직접 만들어 보며 익힌 언어와,<br class="br-wide"> 계속 탐구하고 있는 분야입니다.</p>
+        </div>
+
+        <div class="skills__groups" data-reveal-group>
+          <div class="skill-group card" data-reveal>
+            <div class="skill-group__head">
+              <h3 class="skill-group__title">Languages <small>언어</small></h3>
+              <span class="skill-group__count">05</span>
+            </div>
+            <ul class="skill-list">
+              <li class="skill"><span class="skill__mark" aria-hidden="true">&lt;&gt;</span>HTML</li>
+              <li class="skill"><span class="skill__mark" aria-hidden="true">{}</span>CSS</li>
+              <li class="skill"><span class="skill__mark" aria-hidden="true">JS</span>JavaScript</li>
+              <li class="skill"><span class="skill__mark" aria-hidden="true">Py</span>Python</li>
+              <li class="skill"><span class="skill__mark" aria-hidden="true">Lu</span>Lua</li>
+            </ul>
+          </div>
+
+          <div class="skill-group card" data-reveal>
+            <div class="skill-group__head">
+              <h3 class="skill-group__title">Fields &amp; Interests <small>관심 분야</small></h3>
+              <span class="skill-group__count">05</span>
+            </div>
+            <ul class="skill-list">
+              <li class="skill skill--field">AI / LLM</li>
+              <li class="skill skill--field">Web Apps</li>
+              <li class="skill skill--field">Game Development</li>
+              <li class="skill skill--field">UI / UX</li>
+              <li class="skill skill--field">Creative Coding</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== Philosophy ===================== -->
+    <section class="section philosophy" id="philosophy" aria-labelledby="philosophy-title">
+      <div class="philosophy__rings" aria-hidden="true"><span></span><span></span><span></span></div>
+      <div class="container">
+        <figure class="philosophy__inner" data-reveal>
+          <h2 class="section-label section-label--center" id="philosophy-title"><span class="section-label__num">04</span>Philosophy</h2>
+          <blockquote class="quote">
+            <span class="quote__mark" aria-hidden="true">&ldquo;</span>
+            <p class="quote__text">좋은 아이디어는 머릿속에만 두지 않고,<br> 직접 만들어 볼 때 시작된다.</p>
+          </blockquote>
+          <figcaption class="quote__author">JIUKAE</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ===================== Contact ===================== -->
+    <section class="section contact" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="contact__panel card" data-reveal>
+          <p class="section-label section-label--center"><span class="section-label__num">05</span>Contact</p>
+          <h2 class="contact__title" id="contact-title">무언가를 <span class="text-gradient">만들고 있나요?</span></h2>
+          <p class="contact__desc">새로운 아이디어와 재미있는 프로젝트를 언제나 환영합니다.</p>
+
+          <!--
+            이메일 주소는 js/script.js 상단의 SITE_CONFIG.email 에서 입력합니다.
+            입력하면 이 버튼이 mailto 링크로 활성화됩니다.
+          -->
+          <div class="contact__actions">
+            <a class="btn btn--primary btn--lg" data-email-link>
+              <svg class="icon btn__icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3" /><path d="m4 7.5 8 5.5 8-5.5" /></svg>
+              이메일 보내기
+            </a>
+          </div>
+          <p class="contact__note">
+            <span data-email-text>이메일 주소는 곧 업데이트될 예정입니다.</span>
+            <button class="copy-btn" type="button" data-email-copy hidden>주소 복사</button>
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== Footer ===================== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <a class="logo logo--sm" href="#home" aria-label="JIUKAE 홈으로 이동">JIUKAE<span class="logo__dot">.</span></a>
+      <p class="footer__copy">&copy; <span data-year>2026</span> JIUKAE. Ideas into Reality.</p>
+      <a class="footer__top" href="#home">
+        Back to top
+        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6" /></svg>
+      </a>
+    </div>
+  </footer>
+</body>
+</html>
